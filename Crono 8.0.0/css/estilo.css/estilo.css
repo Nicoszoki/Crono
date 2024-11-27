@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+body {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.left {
+    flex: 1;
+    background-color: #00bcd4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.right {
+    flex: 1;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login {
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 20px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login input {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login button:hover {
+    background-color: #0097a7;
+}
+
+h2 {
+    color: #00bcd4;
+}
+
+.conectado {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 100%;
+}
+
+.encabezado {
+    height: 10vh;
+    width: 100vw;
+    background-color: #00bcd4;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#logoPag {
+    width: 100px;
+    height: 85px;
+}
+
+.usuario-container {
+    margin-left: auto;
+    padding-right: 20px;
+}
+
+#usuario {
+    font-size: 20px;
+    color: white;
+}
+
+#columna {
+    height: 90vh;
+    width: 250px;
+    background-color: #00bcd4;
+}
+
+.opcion {
+    background-color: #00bcd4;
+    cursor: pointer;
+}
+
+.opcion * {
+    cursor: pointer;
+}
+
+.opcion:hover {
+    background-color: #0097a7;
+}
+
+#opciónSeleccionada {
+    background-color: #0097a7;
+}
+
+.titulo {
+    padding: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.logout {
+    width: 250px;
+    position: fixed;
+    bottom: 1%;
+}
+
+#panel {
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+}
+
+#menu {
+    height: 100%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+.perfilUsuario {
+    width: auto;
+    min-width: 220px;
+    height: 192px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+.perfilGrupo {
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconoGrupo {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.icono:hover {
+    filter: brightness(70%);
+}
+
+.divIcono {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: space-evenly;
+    padding-left: 10px;
+}
+
+#filtro {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid black;
+}
+
+#filtroForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    align-content: center;
+}
+
+#filtroForm div {
+    display: flex;
+    margin: 1%;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 20px;
+    user-select: none;
+}
+
+th,
+td {
+    border: 1px solid #00bcd4;
+    padding: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+th {
+    background-color: #00bcd4;
+    color: #fff;
+}
+
+.tr_first {
+    background-color: #00bcd4;
+    color: #fff;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+    unicode-bidi: isolate;
+}
+
+.available {
+    background-color: #4caf50;
+    color: white;
+}
+
+#availabilityButton {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#availabilityButton:hover {
+    background-color: #0097a7;
+}
+
+#availabilityOutput {
+    margin: 20px;
+    font-size: 1.2em;
+}
+
+#menuHorarios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
