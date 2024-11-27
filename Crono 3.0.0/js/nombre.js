@@ -1,0 +1,1 @@
+$("#usuario").html(localStorage.getItem("nombre") + " " + localStorage.getItem("apellido"));
